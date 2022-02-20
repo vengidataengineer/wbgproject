@@ -1,0 +1,160 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "wbgadfv2"
+		},
+		"ls_azdlg2_source_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_azdlg2_source'"
+		},
+		"ls_azsqldb_target_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_azsqldb_target'"
+		},
+		"ls_azure_target_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_azure_target'"
+		},
+		"ls_azuresqldb2_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_azuresqldb2'"
+		},
+		"ls_blob_storage_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_blob_storage'"
+		},
+		"ls_datalake2_target_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_datalake2_target'"
+		},
+		"ls_gen2source_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'ls_gen2source'"
+		},
+		"ls_sourcefile system_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_sourcefile system'"
+		},
+		"ls_sqlserver_target_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_sqlserver_target'"
+		},
+		"ls_azdlg2_source_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://wbgdlsg2.dfs.core.windows.net"
+		},
+		"ls_datalake2_target_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://wbgdlsg2.dfs.core.windows.net"
+		},
+		"ls_gen2source_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://wbgdlsg2.dfs.core.windows.net"
+		},
+		"ls_sourcefile system_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "C:\\Azure data engineer\\Databricks full course\\Data Bricks\\Data Sets"
+		},
+		"ls_sourcefile system_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "Lenovo"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "wbgadfv2_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"ls_azdlg2_source_accountKey": {
+						"value": "[parameters('ls_azdlg2_source_accountKey')]"
+					},
+					"ls_azsqldb_target_connectionString": {
+						"value": "[parameters('ls_azsqldb_target_connectionString')]"
+					},
+					"ls_azure_target_connectionString": {
+						"value": "[parameters('ls_azure_target_connectionString')]"
+					},
+					"ls_azuresqldb2_connectionString": {
+						"value": "[parameters('ls_azuresqldb2_connectionString')]"
+					},
+					"ls_blob_storage_connectionString": {
+						"value": "[parameters('ls_blob_storage_connectionString')]"
+					},
+					"ls_datalake2_target_accountKey": {
+						"value": "[parameters('ls_datalake2_target_accountKey')]"
+					},
+					"ls_gen2source_accountKey": {
+						"value": "[parameters('ls_gen2source_accountKey')]"
+					},
+					"ls_sqlserver_target_connectionString": {
+						"value": "[parameters('ls_sqlserver_target_connectionString')]"
+					},
+					"ls_sourcefile system_password": {
+						"value": "[parameters('ls_sourcefile system_password')]"
+					},
+					"ls_azdlg2_source_properties_typeProperties_url": {
+						"value": "[parameters('ls_azdlg2_source_properties_typeProperties_url')]"
+					},
+					"ls_datalake2_target_properties_typeProperties_url": {
+						"value": "[parameters('ls_datalake2_target_properties_typeProperties_url')]"
+					},
+					"ls_gen2source_properties_typeProperties_url": {
+						"value": "[parameters('ls_gen2source_properties_typeProperties_url')]"
+					},
+					"ls_sourcefile system_properties_typeProperties_host": {
+						"value": "[parameters('ls_sourcefile system_properties_typeProperties_host')]"
+					},
+					"ls_sourcefile system_properties_typeProperties_userId": {
+						"value": "[parameters('ls_sourcefile system_properties_typeProperties_userId')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "wbgadfv2_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'wbgadfv2_ArmTemplate_0')]"
+			]
+		}
+	]
+}

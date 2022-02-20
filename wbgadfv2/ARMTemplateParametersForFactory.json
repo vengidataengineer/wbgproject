@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "wbgadfv2"
+		},
+		"ls_azdlg2_source_accountKey": {
+			"value": ""
+		},
+		"ls_azsqldb_target_connectionString": {
+			"value": ""
+		},
+		"ls_azure_target_connectionString": {
+			"value": ""
+		},
+		"ls_azuresqldb2_connectionString": {
+			"value": ""
+		},
+		"ls_blob_storage_connectionString": {
+			"value": ""
+		},
+		"ls_datalake2_target_accountKey": {
+			"value": ""
+		},
+		"ls_gen2source_accountKey": {
+			"value": ""
+		},
+		"ls_sourcefile system_password": {
+			"value": ""
+		},
+		"ls_sqlserver_target_connectionString": {
+			"value": ""
+		},
+		"ls_azdlg2_source_properties_typeProperties_url": {
+			"value": "https://wbgdlsg2.dfs.core.windows.net"
+		},
+		"ls_datalake2_target_properties_typeProperties_url": {
+			"value": "https://wbgdlsg2.dfs.core.windows.net"
+		},
+		"ls_gen2source_properties_typeProperties_url": {
+			"value": "https://wbgdlsg2.dfs.core.windows.net"
+		},
+		"ls_sourcefile system_properties_typeProperties_host": {
+			"value": "C:\\Azure data engineer\\Databricks full course\\Data Bricks\\Data Sets"
+		},
+		"ls_sourcefile system_properties_typeProperties_userId": {
+			"value": "Lenovo"
+		}
+	}
+}
