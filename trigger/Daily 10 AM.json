@@ -1,0 +1,25 @@
+{
+	"name": "Daily 10 AM",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_WBG",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2022-02-16T10:00:00Z",
+				"endTime": "2022-02-18T11:35:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

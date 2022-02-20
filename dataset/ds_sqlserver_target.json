@@ -1,0 +1,17 @@
+{
+	"name": "ds_sqlserver_target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sqlserver_target",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "customer_new"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "ds_azsqldb_target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azsqldb_target",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "wbdtable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

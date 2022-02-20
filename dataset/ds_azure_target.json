@@ -1,0 +1,19 @@
+{
+	"name": "ds_azure_target",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake2_target",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "sales.csv",
+				"fileSystem": "ifc"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

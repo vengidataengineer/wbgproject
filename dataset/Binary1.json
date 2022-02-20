@@ -1,0 +1,20 @@
+{
+	"name": "Binary1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake2_target",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "csv",
+				"folderPath": "IFC DEv",
+				"fileSystem": "ifc"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

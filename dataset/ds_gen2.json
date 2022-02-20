@@ -1,0 +1,58 @@
+{
+	"name": "ds_gen2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_gen2source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Cust_demo.csv",
+				"folderPath": "ibrddev",
+				"fileSystem": "ibrd"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "age",
+				"type": "String"
+			},
+			{
+				"name": "Martial_Status",
+				"type": "String"
+			},
+			{
+				"name": "NumberOfDependents",
+				"type": "String"
+			},
+			{
+				"name": "Own_House",
+				"type": "String"
+			},
+			{
+				"name": "No_Years_address",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

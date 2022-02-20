@@ -1,0 +1,9 @@
+{
+	"name": "wbgadfv2",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b8188b8a-ab49-481b-919a-840c9b1086ee",
+		"tenantId": "50ae2d52-75b6-4af7-8a08-f460ff790472"
+	}
+}

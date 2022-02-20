@@ -1,0 +1,86 @@
+{
+	"name": "ds_azdlg2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azdlg2_source",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "stores.csv",
+				"folderPath": "ibrddev",
+				"fileSystem": "ibrd"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "StoreCode",
+				"type": "String"
+			},
+			{
+				"name": "StoreName",
+				"type": "String"
+			},
+			{
+				"name": "StoreType",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "OperatingCost",
+				"type": "String"
+			},
+			{
+				"name": "Staff_Cnt",
+				"type": "String"
+			},
+			{
+				"name": "TotalSales",
+				"type": "String"
+			},
+			{
+				"name": "Total_Customers",
+				"type": "String"
+			},
+			{
+				"name": "AcqCostPercust",
+				"type": "String"
+			},
+			{
+				"name": "BasketSize",
+				"type": "String"
+			},
+			{
+				"name": "ProfitPercust",
+				"type": "String"
+			},
+			{
+				"name": "OwnStore",
+				"type": "String"
+			},
+			{
+				"name": "OnlinePresence",
+				"type": "String"
+			},
+			{
+				"name": "Tenure",
+				"type": "String"
+			},
+			{
+				"name": "StoreSegment",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
