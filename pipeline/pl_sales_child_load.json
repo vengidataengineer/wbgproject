@@ -1,0 +1,9 @@
+{
+	"name": "pl_sales_child_load",
+	"properties": {
+		"folder": {
+			"name": "azuredbpl"
+		},
+		"annotations": []
+	}
+}
