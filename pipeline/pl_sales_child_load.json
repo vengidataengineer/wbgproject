@@ -12,6 +12,56 @@
 				}
 			}
 		],
+		"parameters": {
+			"landing_zone_file_path": {
+				"type": "string"
+			},
+			"landing_zone_folder_name": {
+				"type": "string"
+			},
+			"landing_zone_file_name": {
+				"type": "string"
+			},
+			"landing_zone_file_type": {
+				"type": "string"
+			},
+			"staging_zone_database_name": {
+				"type": "string"
+			},
+			"staging_zone_table_name": {
+				"type": "string"
+			},
+			"staging_zone_table_pk_column": {
+				"type": "string"
+			},
+			"pyspark_schema": {
+				"type": "string"
+			},
+			"job_name": {
+				"type": "string"
+			},
+			"job_id": {
+				"type": "string"
+			},
+			"curation_zone_database_name": {
+				"type": "string"
+			},
+			"curation_zone_table_name": {
+				"type": "string"
+			},
+			"curation_zone_table_pk_column": {
+				"type": "string"
+			},
+			"dw_zone_database_name": {
+				"type": "string"
+			},
+			"dw_zone_table_name": {
+				"type": "string"
+			},
+			"dw_zone_table_pk_column": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "Sales load"
 		},

@@ -54,7 +54,45 @@
 									"referenceName": "pl_sales_child_load",
 									"type": "PipelineReference"
 								},
-								"waitOnCompletion": true
+								"waitOnCompletion": true,
+								"parameters": {
+									"landing_zone_file_path": {
+										"value": "@item().landing_zone_file_path",
+										"type": "Expression"
+									},
+									"landing_zone_folder_name": {
+										"value": "@item().landing_zone_folder_name",
+										"type": "Expression"
+									},
+									"landing_zone_file_name": {
+										"value": "landing_zone_file_name.landing_zone_file_name",
+										"type": "Expression"
+									},
+									"landing_zone_file_type": {
+										"value": "@item().landing_zone_file_type",
+										"type": "Expression"
+									},
+									"staging_zone_database_name": {
+										"value": "@item().staging_zone_database_name",
+										"type": "Expression"
+									},
+									"staging_zone_table_name": {
+										"value": "@item().staging_zone_table_name",
+										"type": "Expression"
+									},
+									"staging_zone_table_pk_column": {
+										"value": "@item().staging_zone_table_pk_column",
+										"type": "Expression"
+									},
+									"pyspark_schema": {
+										"value": "@item().pyspark_schema",
+										"type": "Expression"
+									},
+									"job_name": {
+										"value": "@item().job_name",
+										"type": "Expression"
+									}
+								}
 							}
 						}
 					]
