@@ -21,7 +21,8 @@
 					"dataset": {
 						"referenceName": "AzureDatabricksDeltaLake_dateset",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
