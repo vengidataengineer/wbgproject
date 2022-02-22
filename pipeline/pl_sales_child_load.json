@@ -1,17 +1,6 @@
 {
 	"name": "pl_sales_child_load",
 	"properties": {
-		"activities": [
-			{
-				"name": "Execute Pipeline1",
-				"type": "ExecutePipeline",
-				"dependsOn": [],
-				"userProperties": [],
-				"typeProperties": {
-					"waitOnCompletion": true
-				}
-			}
-		],
 		"parameters": {
 			"landing_zone_file_path": {
 				"type": "string"
