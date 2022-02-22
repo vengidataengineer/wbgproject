@@ -91,6 +91,34 @@
 									"job_name": {
 										"value": "@item().job_name",
 										"type": "Expression"
+									},
+									"job_id": {
+										"value": "@item().job_id",
+										"type": "Expression"
+									},
+									"curation_zone_database_name": {
+										"value": "@item().curation_zone_database_name",
+										"type": "Expression"
+									},
+									"curation_zone_table_name": {
+										"value": "@item().curation_zone_table_name",
+										"type": "Expression"
+									},
+									"curation_zone_table_pk_column": {
+										"value": "@item().curation_zone_table_pk_column",
+										"type": "Expression"
+									},
+									"dw_zone_database_name": {
+										"value": "@item().dw_zone_database_name",
+										"type": "Expression"
+									},
+									"dw_zone_table_name": {
+										"value": "@item().dw_zone_table_name",
+										"type": "Expression"
+									},
+									"dw_zone_table_pk_column": {
+										"value": "@item().dw_zone_table_pk_column",
+										"type": "Expression"
 									}
 								}
 							}
