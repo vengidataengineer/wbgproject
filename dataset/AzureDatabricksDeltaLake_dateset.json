@@ -1,0 +1,16 @@
+{
+	"name": "AzureDatabricksDeltaLake_dateset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_azdatabricks deltaleake",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureDatabricksDeltaLakeDataset",
+		"typeProperties": {
+			"database": "jobs",
+			"table": "job_list_dynamic"
+		},
+		"schema": []
+	}
+}
